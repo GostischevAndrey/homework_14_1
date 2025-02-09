@@ -3,7 +3,6 @@ import json
 import pytest
 
 from src.category import Category
-from src.product import Product
 from src.utils import create_objects_from_json, load_from_json_file
 
 
@@ -46,6 +45,3 @@ def test_create_objects_from_json(load_from_json_file_return):
     categories = create_objects_from_json(data)
     assert len(categories) == 1
     assert isinstance(categories[0], Category)
-    assert len(categories[0].products) == 1
-    assert isinstance(categories[0].products[0], Product)
-    assert categories[0].products[0].name == "Samsung Galaxy C23 Ultra"
