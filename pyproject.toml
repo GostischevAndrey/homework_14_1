@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "homework-14-1"
+name = "homework_classes"
 version = "0.1.0"
 description = ""
 authors = ["Andrey <pise4kan8@gmail.com>"]
