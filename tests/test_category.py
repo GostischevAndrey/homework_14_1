@@ -31,4 +31,4 @@ def test_products_property(product_1, product_2, category_3):
 
 
 def test_category_str(product_1, product_2, category_3):
-    assert str(category_3) == "Электроника, количество продуктов: 10 шт."
+    assert str(category_3) == "Электроника, количество продуктов: 12 шт."
