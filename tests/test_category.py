@@ -25,10 +25,10 @@ def test_add_product(product_1, category_3):
 
 def test_products_property(product_1, product_2, category_3):
     assert (
-        category_3.products == 'Название продукта 55" QLED 4K, 123000.0 руб. Остаток 7\n'
-        "Название продукта Samsung Galaxy S23 Ultra, 180000.0 руб. Остаток 5\n"
+        category_3.products == 'Название продукта 55" QLED 4K, 123000.0 руб. Остаток 7 шт.\n'
+        "Название продукта Samsung Galaxy S23 Ultra, 180000.0 руб. Остаток 5 шт.\n"
     )
 
 
 def test_category_str(product_1, product_2, category_3):
-    assert str(category_3) == "Электроника, количество продуктов: 12 шт."
+    assert str(category_3) == "Название категории Электроника, количество продуктов: 12 шт."
